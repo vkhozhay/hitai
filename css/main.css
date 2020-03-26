@@ -512,18 +512,93 @@ body {
 }
 
 
-.Прямоугольник_4 {
-    border-width: 5px;
-    border-color: rgb(250, 250, 250);
-    border-style: solid;
-    background-image: -moz-linear-gradient(180deg, rgb(255, 192, 95) 0%, rgb(244, 206, 148) 50%, rgb(255, 192, 95) 100%);
-    background-image: -webkit-linear-gradient(180deg, rgb(255, 192, 95) 0%, rgb(244, 206, 148) 50%, rgb(255, 192, 95) 100%);
-    background-image: -ms-linear-gradient(180deg, rgb(255, 192, 95) 0%, rgb(244, 206, 148) 50%, rgb(255, 192, 95) 100%);
-    box-shadow: 0px 6px 15.04px 0.96px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    left: 517px;
-    top: 607px;
-    width: 273px;
-    height: 80px;
-    z-index: 7;
+
+
+/* **************SERVICES*************** */
+
+.services {
+    position: relative;
+    top: -2px;
+    background-color: #fff;
+}
+
+.services__container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.services__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1170px;
+    margin: auto;
+    margin-top: 7rem;
+}
+
+.services__item:nth-child(1),
+.services__item:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 200px;
+    border: 1px solid #b8b8b8;
+    box-sizing: border-box;
+    transition: 0.3s;
+    transition-property: border, color;
+}
+
+.services__item:nth-child(2),
+.services__item:nth-child(4) {
+    width: 25%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.services__item:nth-child(2) {
+    background-image: url('../img/services1.jpg');
+}
+
+.services__item:nth-child(4) {
+    background-image: url('../img/services2.jpg');
+}
+
+.services__item-title {
+    margin-top: 2rem;
+    font-size: 2.6rem;
+    color: #250030;
+    transition: 0.3s;
+    transition-property: color;
+}
+
+.services__item:nth-child(1):hover,
+.services__item:nth-child(3):hover {
+    border: 1px solid #f4ce94;
+
+}
+
+.services__item:nth-child(1):hover .services__item-title,
+.services__item:nth-child(3):hover .services__item-title {
+    color: #f4ce94;
+}
+
+.icon-container {
+    width: 8rem;
+    height: 8rem;
+}
+
+.services__icon {
+    width: 8rem;
+    height: 8rem;
+    fill: linear-gradient(45deg, #410054 35%, rgba(108, 22, 73, 1) 100%);
+    transition: 0.3s;
+    transition-property: fill;
+}
+
+.services__item:nth-child(1):hover .services__icon,
+.services__item:nth-child(3):hover .services__icon {
+    fill: #f4ce94;
 }

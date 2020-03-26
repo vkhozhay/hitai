@@ -1,0 +1,120 @@
+body {
+    background: url('../img/ornament4.png') 20rem bottom/auto no-repeat, url('../img/ornament3.png') right 150rem/auto no-repeat, url('../img/bg-orn.png') -10rem 100rem/30rem auto no-repeat, url('../img/ornament.png') right 10rem/auto no-repeat, url('../img/ornament2.png') left top/auto no-repeat, linear-gradient(45deg, rgba(65, 0, 84, 1) 35%, rgba(108, 22, 73, 1) 100%);
+}
+
+.header__top {
+    background: none;
+}
+
+.price__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1170px;
+    margin: auto;
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+}
+
+.price__title {
+    margin-bottom: 5rem;
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #f4ce94;
+}
+
+.price__item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+.price__item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(244, 206, 148, 0) 0%, rgba(244, 206, 148, 1) 15%, rgba(244, 206, 148, 1) 50%, rgba(244, 206, 148, 1) 85%, rgba(244, 206, 148, 0) 100%);
+
+}
+
+.item__title {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f4ce94;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.item__title_short {
+    width: 80%;
+    text-align-last: left;
+}
+
+.item__discription {
+    width: 80%;
+
+}
+
+.item__discription p {
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.item__discription p:last-child {
+    margin-bottom: 0;
+}
+
+.item__discription ul {
+    margin-top: 1.5rem;
+}
+
+.item__discription ul li {
+    position: relative;
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: normal;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.item__discription ul li:last-child {
+    margin-bottom: 0;
+}
+
+.item__discription ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -0.35rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: #f4ce94;
+}
+
+
+
+.item__price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+.item__prices .item__price:last-child {
+    margin-bottom: 0;
+}
