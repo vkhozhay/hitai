@@ -252,7 +252,6 @@ body {
 }
 
 .header__title {
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 6rem;
     color: #f4ce94;
     font-weight: 700;
@@ -284,7 +283,6 @@ body {
 
 .header__second-title {
     margin-top: 15rem;
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 3rem;
     color: #f4ce94;
     font-weight: 700;
