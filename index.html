@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container header__container">
             <div class="header__top">
                 <div class="header__contacts">
@@ -29,14 +29,20 @@
                 </div>
                 <nav class="header__navigation">
                     <ul class="header__nav-list">
-                        <li class="header__nav-list-item"><a href="#" class="header__nav-list-item-link">Главная</a>
+                        <li class="header__nav-list-item"><a href="#header"
+                                class="header__nav-list-item-link flowing-scroll">Главная</a>
                         </li>
-                        <li class="header__nav-list-item"><a href="#" class="header__nav-list-item-link">Подарочный
+                        <li class="header__nav-list-item"><a href="#certificate"
+                                class="header__nav-list-item-link flowing-scroll">Подарочный
                                 сертификат</a></li>
-                        <li class="header__nav-list-item"><a href="#" class="header__nav-list-item-link">Услуги</a></li>
-                        <li class="header__nav-list-item"><a href="#" class="header__nav-list-item-link">Акции</a></li>
-                        <li class="header__nav-list-item"><a href="#" class="header__nav-list-item-link">Отзывы</a></li>
-                        <li class="header__nav-list-item"><a href="#" class="header__nav-list-item-link">Контакты</a>
+                        <li class="header__nav-list-item"><a href="#services"
+                                class="header__nav-list-item-link flowing-scroll">Услуги</a></li>
+                        <li class="header__nav-list-item"><a href="#stocks"
+                                class="header__nav-list-item-link flowing-scroll">Акции</a></li>
+                        <li class="header__nav-list-item"><a href="#reviews"
+                                class="header__nav-list-item-link flowing-scroll">Отзывы</a></li>
+                        <li class="header__nav-list-item"><a href="#contacts"
+                                class="header__nav-list-item-link flowing-scroll">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -78,7 +84,7 @@
     </header>
 
 
-    <section class="certificate">
+    <section class="certificate" id="certificate">
         <div class="container certificate__container">
             <h2 class="certificate__title">ПОДАРОЧНЫЕ СЕРТИФИКАТЫ</h2>
             <p class="certificate__subtitle">Подарите близким незабываемые минуты расслабления от мастеров СПА из
@@ -108,7 +114,7 @@
     </section>
 
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="services__container container">
             <h2 class="certificate__title">НАШИ УСЛУГИ</h2>
             <div class="services__content">
@@ -217,7 +223,7 @@
         </div>
     </section>
 
-    <section class="stocks">
+    <section class="stocks" id="stocks">
         <div class="container stocks__container">
             <h2 class="stocks__title certificate__title">АКЦИИ</h2>
             <div class="stocks__content">
@@ -277,7 +283,7 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container reviews__container">
             <h2 class="reviews__title certificate__title">ОТЗЫВЫ</h2>
             <div class="reviews__slider swiper-container">
@@ -418,10 +424,102 @@
                     href="https://www.tripadvisor.ru/Attraction_Review-g298488-d19833365-Reviews-Hi_Thai-Yaroslavl_Yaroslavl_Oblast_Central_Russia.html"
                     target="_blank">Tripadvisor</a>
             </div>
+
         </div>
     </section>
 
+    <div class="footer__outer-container">
 
+        <section class="contacts" id="contacts">
+            <div class="container contacts__container">
+                <div class="contacts__information">
+                    <a href="#" class="contacts__location">Ярославль, <br>
+                        Максимова, 7</a>
+                    <div class="contacts__phone-and-appointment-container">
+                        <a href="tel:+79997996007" class="contacts__phone">+7 (999) 799 60 07</a>
+                        <a href="https://beauty.dikidi.net/ru/record/323341" target="_blank"
+                            class="contacts__appointment-btn">Записаться онлайн</a>
+                    </div>
+                    <div class="footer__socials">
+                        <a href="https://www.instagram.com/hi_tai_spa/" target="_blank" class="footer__social-item"><img
+                                src="img/Instagram_logo2.svg" alt=""></a>
+                        <a href="https://vk.com/hi_tai_yar" target="_blank" class="footer__social-item"><img
+                                src="img/vk-logo2.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="contacts__form-container">
+                    <h3 class="contacts__form-title">Заполните форму, <br> и мы Вам перезвоним</h3>
+                    <form class="contacts__form">
+                        <input type="text" name="name" id="contacts__form-input-name" class="contacts__form-input-name"
+                            placeholder="Ваше имя">
+                        <input type="text" name="phone" id="contacts__form-input-number"
+                            class="contacts__form-input-number" placeholder="Номер телефона" required>
+                        <input type="submit" value="ОТПРАВИТЬ">
+                    </form>
+                </div>
+                <div class="contacts__map">
+                    <iframe class="contacts__map-frame"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1796.3602974407293!2d39.888634292735524!3d57.62733002043377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b2915c7457038d%3A0xdda9d04ee7a932df!2z0YPQuy4g0JzQsNC60YHQuNC80L7QstCwLCA3LCDQr9GA0L7RgdC70LDQstC70YwsINCv0YDQvtGB0LvQsNCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAxNTAwMDA!5e0!3m2!1sru!2sua!4v1585324307426!5m2!1sru!2sua"
+                        width="600" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__logo-and-nav-container">
+                    <a href="index.html" class="footer__logo"><img src="img/logo.png" alt="" width="150"></a>
+                    <nav class="footer__navigation">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-list-item"><a href="#header"
+                                    class="footer__nav-list-item-link flowing-scroll">Главная</a>
+                            </li>
+                            <li class="footer__nav-list-item"><a href="#certificate"
+                                    class="footer__nav-list-item-link flowing-scroll">Подарочный
+                                    сертификат</a></li>
+                            <li class="footer__nav-list-item"><a href="#services"
+                                    class="footer__nav-list-item-link flowing-scroll">Услуги</a>
+                            </li>
+                            <li class="footer__nav-list-item"><a href="#stocks"
+                                    class="footer__nav-list-item-link flowing-scroll">Акции</a>
+                            </li>
+                            <li class="footer__nav-list-item"><a href="#reviews"
+                                    class="footer__nav-list-item-link flowing-scroll">Отзывы</a>
+                            </li>
+                            <li class="footer__nav-list-item"><a href="#contacts"
+                                    class="footer__nav-list-item-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__disctiption">
+                    <p>Спа-салон «Хай Тай» не являются лечебными учреждением, представленные в нем услуги не носят
+                        медицинский характер.</p>
+                    <p>Тайские спа-массажи и спа-программы направлены на релаксацию, снятие стресса, улучшение внешнего
+                        вида.</p>
+                    <p>Имеются <a href="Protivopokazania_2020.ocr.pdf" target="_blank"> противопоказания</a>, перед
+                        посещением необходимо проконсультироваться с
+                        врачом.</p>
+                </div>
+
+
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="footer__socials-and-payments">
+        <div class="footer__payments">
+            <div class="footer__payment-item"><img src="img/Visa_logo.svg" alt=""></div>
+            <div class="footer__payment-item"><img src="img/Mastercard-logo.svg" alt=""></div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
@@ -449,6 +547,28 @@
                 el: '.reviews__slider-pagination',
                 dynamicBullets: true,
             },
+        });
+
+        $(function () {
+            $("#contacts__form-input-number").mask("+7 (999) 999-99-99");
+        });
+
+        $('.flowing-scroll').on('click', function () {
+            let el = $(this);
+            let dest = el.attr('href'); // получаем направление
+            if (dest !== undefined && dest !== '') { // проверяем существование
+                $('html').animate({
+                        scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
+                    }, 500 // скорость прокрутки
+                );
+            }
+
+            mobileNavigation.classList.remove('navigation-mobile_active');
+
+            for (i = 0; i < sectionArr.length; i++) {
+                sectionArr[i].classList.remove('section__menu-active');
+            }
+            return false;
         });
     </script>
 </body>
