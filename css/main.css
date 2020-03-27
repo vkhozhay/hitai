@@ -551,6 +551,7 @@ body {
 
 .services__item:nth-child(2),
 .services__item:nth-child(4) {
+    position: relative;
     width: 25%;
     height: 200px;
     background-position: center;
@@ -559,11 +560,23 @@ body {
 }
 
 .services__item:nth-child(2) {
-    background-image: url('../img/services1.jpg');
+    background-image: url('../img/services11.jpg');
 }
 
 .services__item:nth-child(4) {
-    background-image: url('../img/services2.jpg');
+    background-image: url('../img/services22.jpg');
+}
+
+.services__item:nth-child(2)::after,
+.services__item:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(65, 0, 84, 1) 35%, rgba(108, 22, 73, 1) 100%);
+    opacity: 0.3;
 }
 
 .services__item-title {
@@ -593,7 +606,6 @@ body {
 .services__icon {
     width: 8rem;
     height: 8rem;
-    fill: linear-gradient(45deg, #410054 35%, rgba(108, 22, 73, 1) 100%);
     transition: 0.3s;
     transition-property: fill;
 }
@@ -601,4 +613,131 @@ body {
 .services__item:nth-child(1):hover .services__icon,
 .services__item:nth-child(3):hover .services__icon {
     fill: #f4ce94;
+}
+
+
+
+
+/* **************STOCKS**************** */
+
+.stocks {
+    background: linear-gradient(45deg, rgba(65, 0, 84, 1) 35%, rgba(108, 22, 73, 1) 100%);
+    ;
+}
+
+.stocks__container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.stocks__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8rem;
+}
+
+.stocks__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 500px;
+    min-height: 350px;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    box-sizing: border-box;
+    margin-bottom: 4rem;
+    background-color: #fff;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.stocks__item-title {
+    font-size: 2rem;
+}
+
+.stocks__item:nth-child(1) {
+    background-image: url('../img/stocks/1.jpg');
+}
+
+.stocks__item:nth-child(2) {
+    background-image: url('../img/stocks/2.jpg');
+}
+
+.stocks__item:nth-child(3) {
+    background-image: url('../img/stocks/3.jpg');
+}
+
+.stocks__item:nth-child(4) {
+    background-image: url('../img/stocks/4.jpg');
+}
+
+.stocks__item:nth-child(5) {
+    background-image: url('../img/stocks/5.jpg');
+}
+
+.stocks__item:nth-child(6) {
+    background-image: url('../img/stocks/6.jpg');
+}
+
+
+.stocks__item-discription {
+    width: 80%;
+    margin-top: 3rem;
+}
+
+.stocks__item:nth-child(3) .stocks__item-discription {
+    width: 70%;
+}
+
+.stocks__item-discription p {
+    font-size: 1.4rem;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.stocks__item-discription p:last-child {
+    margin-bottom: 0;
+}
+
+.stocks__item-discription ul {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.stocks__item-discription ul li {
+    position: relative;
+    font-size: 1.4rem;
+    line-height: normal;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.stocks__item-discription ul li:last-child {
+    margin-bottom: 0;
+}
+
+.stocks__item-discription ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -0.35rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: #f4ce94;
+}
+
+
+
+/* **************REVIEWS************** */
+
+.reviews__container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
