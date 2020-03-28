@@ -1,3 +1,9 @@
 body {
     background: url('../img/ornament3.png') right 150rem/auto no-repeat, url('../img/bg-orn.png') -10rem 100rem/30rem auto no-repeat, url('../img/ornament.png') right 10rem/auto no-repeat, url('../img/ornament2.png') left top/auto no-repeat, linear-gradient(45deg, rgba(65, 0, 84, 1) 35%, rgba(108, 22, 73, 1) 100%);
 }
+
+@media(max-width: 800px) {
+    body {
+        background: linear-gradient(45deg, rgba(65, 0, 84, 1) 35%, rgba(108, 22, 73, 1) 100%);
+    }
+}

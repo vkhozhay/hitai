@@ -6,6 +6,17 @@ body {
     background: none;
 }
 
+@media(max-width: 1023px) {
+    .header__navigation {
+        display: flex;
+    }
+
+    .header__contacts {
+        justify-content: center;
+    }
+
+}
+
 .price__container {
     display: flex;
     flex-direction: column;
@@ -117,4 +128,43 @@ body {
 
 .item__prices .item__price:last-child {
     margin-bottom: 0;
+}
+
+
+@media(max-width: 1280px) {
+    .price__container {
+        max-width: 1170px;
+        width: auto;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        box-sizing: border-box;
+    }
+}
+
+@media(max-width: 800px) {
+    body {
+        background: linear-gradient(45deg, rgba(65, 0, 84, 1) 35%, rgba(108, 22, 73, 1) 100%);
+    }
+
+    .item__title_short {
+        width: 100%;
+        text-align-last: left;
+    }
+
+    .item__discription {
+        width: 100%;
+
+    }
+
+    .price__item {
+        justify-content: center;
+    }
+
+    .item__prices {
+        margin-top: 3rem;
+    }
+
+    .item__price {
+        text-align: center;
+    }
 }

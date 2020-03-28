@@ -12,13 +12,62 @@
 </head>
 
 <body>
+
+
+
+    <div class="mobile-menu">
+        <div class="mobile-menu__close-btn"></div>
+        <div class="mobile-menu__contacts">
+            <a href="index.html" class="header__logo"><img src="img/logo.png" alt="Логотип" width="150"></a>
+            <div class="mobile-menu__contacts-links">
+                <a href="#map" class="mobile-menu__location flowing-scroll">Ярославль, <br>
+                    Максимова, 7</a>
+                <div class="mobile-menu__phone-and-appointment-container">
+                    <a href="tel:+79997996007" class="mobile-menu__phone">+7 (999) 799 60 07</a>
+                    <a href="https://beauty.dikidi.net/ru/record/323341" target="_blank"
+                        class="mobile-menu__appointment-btn">Записаться онлайн</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="mobile-menu__navigation">
+            <ul class="mobile-menu__nav-list">
+                <li class="mobile-menu__nav-list-item"><a href="#header"
+                        class="mobile-menu__nav-list-item-link flowing-scroll">Главная</a>
+                </li>
+                <li class="mobile-menu__nav-list-item"><a href="#certificate"
+                        class="mobile-menu__nav-list-item-link flowing-scroll">Подарочный
+                        сертификат</a></li>
+                <li class="mobile-menu__nav-list-item"><a href="#services"
+                        class="mobile-menu__nav-list-item-link flowing-scroll">Услуги</a></li>
+                <li class="mobile-menu__nav-list-item"><a href="#stocks"
+                        class="mobile-menu__nav-list-item-link flowing-scroll">Акции</a></li>
+                <li class="mobile-menu__nav-list-item"><a href="#reviews"
+                        class="mobile-menu__nav-list-item-link flowing-scroll">Отзывы</a></li>
+                <li class="mobile-menu__nav-list-item"><a href="#contacts"
+                        class="mobile-menu__nav-list-item-link flowing-scroll">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu__socials">
+            <a href="https://www.instagram.com/hi_tai_spa/" target="_blank" class="mobile-menu__social-item"><img
+                    src="img/Instagram_logo2.svg" alt=""></a>
+            <a href="https://vk.com/hi_tai_yar" target="_blank" class="mobile-menu__social-item"><img
+                    src="img/vk-logo2.svg" alt=""></a>
+        </div>
+    </div>
+
+
+    <!-- <a href="https://beauty.dikidi.net/ru/record/323341" target="_blank" id="appointment-btn">Записаться онлайн</a> -->
     <header class="header" id="header">
         <div class="container header__container">
             <div class="header__top">
                 <div class="header__contacts">
                     <a href="index.html" class="header__logo"><img src="img/logo.png" alt="Логотип" width="200"></a>
+                    <div class="header__mobile-menu-btn"></div>
                     <div class="header__contacts-links">
-                        <a href="#" class="header__location">Ярославль, <br>
+                        <a href="#map" class="header__location flowing-scroll">Ярославль, <br>
                             Максимова, 7</a>
                         <div class="header__phone-and-appointment-container">
                             <a href="tel:+79997996007" class="header__phone">+7 (999) 799 60 07</a>
@@ -51,6 +100,8 @@
                 <div class="header__content-text">
                     <h1 class="header__title">Салон «Хай Тай»</h1>
                     <p class="header__subtitle">Место, где отдыхают душой и телом. <br> Где тепло и хорошо!</p>
+                    <a href="https://beauty.dikidi.net/ru/record/323341" target="_blank"
+                        class="header__content-appointment-btn">Записаться онлайн</a>
                     <h3 class="header__second-title">СПА от мастеров из Таиланда</h3>
                     <div class="header__second-title-discription">
                         <p>Атмосфера расслабления за счет подобранной музыки и ароматов</p>
@@ -458,7 +509,7 @@
                     </form>
                 </div>
                 <div class="contacts__map">
-                    <iframe class="contacts__map-frame"
+                    <iframe class="contacts__map-frame" id="map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1796.3602974407293!2d39.888634292735524!3d57.62733002043377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b2915c7457038d%3A0xdda9d04ee7a932df!2z0YPQuy4g0JzQsNC60YHQuNC80L7QstCwLCA3LCDQr9GA0L7RgdC70LDQstC70YwsINCv0YDQvtGB0LvQsNCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAxNTAwMDA!5e0!3m2!1sru!2sua!4v1585324307426!5m2!1sru!2sua"
                         width="600" height="300" frameborder="0" style="border:0;" allowfullscreen=""
                         aria-hidden="false" tabindex="0"></iframe>
@@ -517,60 +568,29 @@
 
     </div>
 
+
+    <div class="header__contacts_fixed header__contacts">
+        <a href="index.html" class="header__logo"><img src="img/logo.png" alt="Логотип" width="100"></a>
+        <div class="header__contacts-links">
+            <a href="#map" class="header__location flowing-scroll">Ярославль, <br>
+                Максимова, 7</a>
+            <div class="header__phone-and-appointment-container">
+                <a href="tel:+79997996007" class="header__phone">+7 (999) 799 60 07</a>
+                <a href="https://beauty.dikidi.net/ru/record/323341" target="_blank"
+                    class="header__appointment-btn">Записаться онлайн</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
-    <script>
-        var swiper = new Swiper('.header__swiper-container', {
-            speed: 2000,
-            pagination: {
-                el: '.header__swiper-pagination',
-                clickable: true
-            },
-            autoplay: {
-                delay: 3000,
-            },
-            allowTouchMove: false,
-            loop: true,
-        });
-
-        var swiper = new Swiper('.reviews__slider', {
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.reviews__slider-pagination',
-                dynamicBullets: true,
-            },
-        });
-
-        $(function () {
-            $("#contacts__form-input-number").mask("+7 (999) 999-99-99");
-        });
-
-        $('.flowing-scroll').on('click', function () {
-            let el = $(this);
-            let dest = el.attr('href'); // получаем направление
-            if (dest !== undefined && dest !== '') { // проверяем существование
-                $('html').animate({
-                        scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
-                    }, 500 // скорость прокрутки
-                );
-            }
-
-            mobileNavigation.classList.remove('navigation-mobile_active');
-
-            for (i = 0; i < sectionArr.length; i++) {
-                sectionArr[i].classList.remove('section__menu-active');
-            }
-            return false;
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
