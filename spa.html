@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Хай Тай. СПА</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/massages.css">
@@ -18,7 +18,7 @@
                 <div class="header__contacts">
                     <a href="index.html" class="header__logo"><img src="img/logo.png" alt="Логотип" width="200"></a>
                     <div class="header__contacts-links">
-                        <a href="#" class="header__location">Ярославль, <br>
+                        <a class="header__location">Ярославль, <br>
                             Максимова, 7</a>
                         <div class="header__phone-and-appointment-container">
                             <a href="tel:+79997996007" class="header__phone">+7 (999) 799 60 07</a>
@@ -171,6 +171,34 @@
         </div>
     </section>
 
+
+    <div class="header__contacts_fixed header__contacts">
+        <a href="index.html" class="header__logo"><img src="img/logo.png" alt="Логотип" width="100"></a>
+        <div class="header__contacts-links">
+            <a class="header__location flowing-scroll">Ярославль, <br>
+                Максимова, 7</a>
+            <div class="header__phone-and-appointment-container">
+                <a href="tel:+79997996007" class="header__phone">+7 (999) 799 60 07</a>
+                <a href="https://beauty.dikidi.net/ru/record/323341" target="_blank"
+                    class="header__appointment-btn">Записаться онлайн</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        var fixedHeader = $('.header__contacts_fixed');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 170) {
+                fixedHeader.addClass('header__contacts_fixed_active');
+            } else {
+                fixedHeader.removeClass('header__contacts_fixed_active');
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Хай Тай. СПА от мастеров из Таиланда</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -30,34 +31,58 @@
             </div>
         </div>
 
-        <nav class="mobile-menu__navigation">
-            <ul class="mobile-menu__nav-list">
-                <li class="mobile-menu__nav-list-item"><a href="#header"
-                        class="mobile-menu__nav-list-item-link flowing-scroll">Главная</a>
-                </li>
-                <li class="mobile-menu__nav-list-item"><a href="#certificate"
-                        class="mobile-menu__nav-list-item-link flowing-scroll">Подарочный
-                        сертификат</a></li>
-                <li class="mobile-menu__nav-list-item"><a href="#services"
-                        class="mobile-menu__nav-list-item-link flowing-scroll">Услуги</a></li>
-                <li class="mobile-menu__nav-list-item"><a href="#stocks"
-                        class="mobile-menu__nav-list-item-link flowing-scroll">Акции</a></li>
-                <li class="mobile-menu__nav-list-item"><a href="#reviews"
-                        class="mobile-menu__nav-list-item-link flowing-scroll">Отзывы</a></li>
-                <li class="mobile-menu__nav-list-item"><a href="#contacts"
-                        class="mobile-menu__nav-list-item-link flowing-scroll">Контакты</a>
-                </li>
-            </ul>
-        </nav>
 
-        <div class="mobile-menu__socials">
-            <a href="https://www.instagram.com/hi_tai_spa/" target="_blank" class="mobile-menu__social-item"><img
-                    src="img/Instagram_logo2.svg" alt=""></a>
-            <a href="https://vk.com/hi_tai_yar" target="_blank" class="mobile-menu__social-item"><img
-                    src="img/vk-logo2.svg" alt=""></a>
+
+        <div class="mobile-menu__nav-and-socials">
+            <nav class="mobile-menu__navigation">
+                <ul class="mobile-menu__nav-list">
+                    <li class="mobile-menu__nav-list-item"><a href="#header"
+                            class="mobile-menu__nav-list-item-link flowing-scroll">Главная</a>
+                    </li>
+                    <li class="mobile-menu__nav-list-item"><a href="#certificate"
+                            class="mobile-menu__nav-list-item-link flowing-scroll">Подарочный
+                            сертификат</a></li>
+                    <li class="mobile-menu__nav-list-item"><a href="#services"
+                            class="mobile-menu__nav-list-item-link flowing-scroll">Услуги</a></li>
+                    <li class="mobile-menu__nav-list-item"><a href="#stocks"
+                            class="mobile-menu__nav-list-item-link flowing-scroll">Акции</a></li>
+                    <li class="mobile-menu__nav-list-item"><a href="#reviews"
+                            class="mobile-menu__nav-list-item-link flowing-scroll">Отзывы</a></li>
+                    <li class="mobile-menu__nav-list-item"><a href="#contacts"
+                            class="mobile-menu__nav-list-item-link flowing-scroll">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu__socials">
+                <a href="https://www.instagram.com/hi_tai_spa/" target="_blank" class="mobile-menu__social-item"><img
+                        src="img/Instagram_logo2.svg" alt=""></a>
+                <a href="https://vk.com/hi_tai_yar" target="_blank" class="mobile-menu__social-item"><img
+                        src="img/vk-logo2.svg" alt=""></a>
+            </div>
         </div>
     </div>
 
+
+    <div class="popup-form">
+        <div class="popup-form__container">
+            <div class="popup__form-container">
+                <div class="popup-form__btn-close"></div>
+                <h3 class="contacts__form-title">Заполните форму, <br> и мы с Вами свяжемся</h3>
+                <form enctype="multipart/form-data" name="popup-request" id="popup__form" class="contacts__form">
+                    <input type="text" name="request_name" id="popup__form-input-name" class="contacts__form-input-name"
+                        placeholder="Ваше имя">
+                    <input type="text" name="request_phone" id="popup__form-input-number"
+                        class="contacts__form-input-number" placeholder="Номер телефона" required>
+                    <input type="submit" value="ОТПРАВИТЬ">
+                </form>
+                <div class="popup-form__discription">Настоящим даю согласие на обработку персональных данных и
+                    соглашаюсь с <a href="Правила подарочных сертификатов.pdf" target="_blank"> правилами использования
+                        подарочных
+                        сертификатов</a></div>
+            </div>
+        </div>
+    </div>
 
     <!-- <a href="https://beauty.dikidi.net/ru/record/323341" target="_blank" id="appointment-btn">Записаться онлайн</a> -->
     <header class="header" id="header">
@@ -500,13 +525,17 @@
                 </div>
                 <div class="contacts__form-container">
                     <h3 class="contacts__form-title">Заполните форму, <br> и мы Вам перезвоним</h3>
-                    <form class="contacts__form">
-                        <input type="text" name="name" id="contacts__form-input-name" class="contacts__form-input-name"
-                            placeholder="Ваше имя">
-                        <input type="text" name="phone" id="contacts__form-input-number"
+                    <form enctype="multipart/form-data" name="callback-request" id="callback__form"
+                        class="contacts__form">
+                        <input type="text" name="callback_name" id="contacts__form-input-name"
+                            class="contacts__form-input-name" placeholder="Ваше имя">
+                        <input type="text" name="callback_phone" id="contacts__form-input-number"
                             class="contacts__form-input-number" placeholder="Номер телефона" required>
                         <input type="submit" value="ОТПРАВИТЬ">
+                        <div class="contacts__form-discription">Настоящим я даю согласие на обработку персональных
+                            данных.</div>
                     </form>
+
                 </div>
                 <div class="contacts__map">
                     <iframe class="contacts__map-frame" id="map"
@@ -590,6 +619,7 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

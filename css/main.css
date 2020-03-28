@@ -231,9 +231,16 @@ body {
     background: linear-gradient(90deg, rgba(244, 206, 148, 0) 0%, rgba(244, 206, 148, 1) 15%, rgba(244, 206, 148, 1) 50%, rgba(244, 206, 148, 1) 85%, rgba(244, 206, 148, 0) 100%);
 } */
 
+.mobile-menu__nav-and-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .mobile-menu__socials {
     display: flex;
+    margin-top: 5rem;
 }
 
 .mobile-menu__social-item {
@@ -285,6 +292,121 @@ body {
     transform: rotate(-45deg);
 }
 
+@media(max-height: 420px) {
+    .mobile-menu {
+        flex-direction: row;
+    }
+
+    .mobile-menu__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+    }
+
+    .mobile-menu__nav-and-socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+    }
+
+    .mobile-menu__contacts::after {
+        display: none;
+    }
+}
+
+
+
+
+
+
+.popup-form__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup__form-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, rgba(65, 0, 84, 1) 35%, rgba(108, 22, 73, 1) 100%);
+
+}
+
+.popup-form__container_active {
+    display: flex;
+}
+
+.popup__form-container form {
+    width: 70%;
+}
+
+.popup__form-container form input {
+    width: 100%;
+}
+
+.popup-form__btn-close {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.popup-form__btn-close::after,
+.popup-form__btn-close::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #f4ce94;
+}
+
+.popup-form__btn-close::after {
+    transform: rotate(45deg);
+}
+
+.popup-form__btn-close::before {
+    transform: rotate(-45deg);
+}
+
+.popup-form__discription {
+    width: 80%;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.popup-form__discription a {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: underline;
+}
 
 
 /* #appointment-btn {
@@ -1579,6 +1701,14 @@ body {
     box-shadow: 0px 6px 15.04px 0.96px rgba(0, 0, 0, 0.5);
 }
 
+.contacts__form-discription {
+    width: 22rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 300;
+}
+
 .contacts::after {
     content: '';
     position: absolute;
@@ -1829,7 +1959,7 @@ body {
 .header__contacts_fixed {
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 9998;
     width: 100%;
     padding-left: 5rem;
     padding-right: 5rem;
