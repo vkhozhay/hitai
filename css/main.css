@@ -1741,13 +1741,18 @@ body {
 @media(max-width:767px) {
     .contacts__container {
         flex-wrap: wrap;
-        height: 600px;
+        height: 700px;
     }
 
     .contacts__information,
     .contacts__form-container {
         width: 100%;
         height: 200px;
+    }
+
+    .contacts__form-container {
+        width: 100%;
+        height: 300px;
     }
 
     .contacts__map {
